@@ -85,7 +85,8 @@ func init() {
 							log.Fatal("failed to generate auth token", err)
 						}
 
-						fmt.Println("auth token generated successfully")
+						fmt.Println("auth token generated successfully:")
+						fmt.Println(token)
 
 						return opt.Username, token
 					},
